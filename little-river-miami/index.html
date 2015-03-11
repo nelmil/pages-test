@@ -18,13 +18,23 @@
     <style>
       html, body {height:100%; margin: 0;}
 
+      body {
+        background-color:#FFFFFF;
+        background-image:url('images/bgimage-large.png');
+        background-position:center center;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        cursor:pointer;
+        background-size:cover;
+      }
+
       
 
     </style>
   </head>
-  <body id="body" style="background:url('images/bgimage-large.jpg') no-repeat center center fixed; background-size:cover;">
+  <body id="body">
       
-   <!-- <img src="images/coverbg.jpg" class="bg"> -->
+
 
     
 
@@ -38,7 +48,17 @@
         if (e.target === document.body) {
             window.location = "mailto:info@LittleRiverMiami.com"
         }
-      }
+      };
+      document.body.onmouseenter = function(e) {
+        if (e.target === document.body) {
+         document.getElementById('body').style.backgroundImage = "url(images/bgimage-large-75.png)";
+        }
+      };
+      document.body.onmouseenter = function(e) {
+        if (e.target === document.body) {
+         document.getElementById('body').style.backgroundImage = "url(images/bgimage-large.png)";
+        }
+      };
       
     </script>
   </body>
