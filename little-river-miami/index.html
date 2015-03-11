@@ -16,21 +16,16 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-      html, body {height:100%;}
+      html, body {height:100%; margin: 0;}
 
-      body {
-        background-color:#FFFFFF;
-        background-image:url('images/little-river-miami-logo.png');
-        background-position:center center;
-        background-repeat:no-repeat;
-        background-attachment:fixed;
-        background-size:33%;
-        cursor:pointer;
-      }
+      
 
     </style>
   </head>
-  <body id="body">
+  <body id="body" style="background:url('images/bgimage-large.jpg') no-repeat center center fixed; background-size:cover;">
+      
+   <!-- <img src="images/coverbg.jpg" class="bg"> -->
+
     
 
 
@@ -44,16 +39,7 @@
             window.location = "mailto:info@LittleRiverMiami.com"
         }
       }
-      document.body.onmouseenter = function(e) {
-        if (e.target === document.body) {
-         document.getElementById('body').style.backgroundImage="url(images/little-river-miami-logo-80.png)";
-        }
-      }
-      document.body.onmouseleave = function(e) {
-        if (e.target === document.body) {
-         document.getElementById('body').style.backgroundImage="url(images/little-river-miami-logo.png)";
-        }
-      }
+      
     </script>
   </body>
 </html>
